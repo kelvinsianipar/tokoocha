@@ -1,0 +1,59 @@
+.header-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon-home-furniture,
+  .icon-orders-furniture,
+  .icon-wishlists-furniture,
+  .icon-profile-furniture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #000; /* Ganti dengan warna teks yang diinginkan */
+    text-decoration: none;
+  }
+  
+  .icon-home-furniture span,
+  .icon-orders-furniture span,
+  .icon-wishlists-furniture span,
+  .icon-profile-furniture span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f2f2f2; /* Ganti dengan warna latar belakang yang diinginkan */
+  }
+  
+  .icon-home-furniture:hover span,
+  .icon-orders-furniture:hover span,
+  .icon-wishlists-furniture:hover span,
+  .icon-profile-furniture:hover span {
+    background-color: #ddd; /* Ganti dengan warna latar belakang hover yang diinginkan */
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .header-links {
+      justify-content: center;
+    }
+  
+    .icon-home-furniture,
+    .icon-orders-furniture,
+    .icon-wishlists-furniture,
+    .icon-profile-furniture {
+      flex-direction: row;
+    }
+  
+    .icon-home-furniture span,
+    .icon-orders-furniture span,
+    .icon-wishlists-furniture span,
+    .icon-profile-furniture span {
+      margin-right: 5px;
+    }
+  }
+  
